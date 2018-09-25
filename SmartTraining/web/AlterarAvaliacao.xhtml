@@ -10,6 +10,10 @@
     <h:body>
         <h2>Alterar Avalição</h2>
         <h:form>
+            <h:inputHidden value="#{avaliacao.avaliacao.codCpfAluno}"/>
+            <h:inputHidden value="#{avaliacao.avaliacao.data}"/>
+            <h:inputHidden value="#{avaliacao.avaliacao.codCpfInstrutor}"/>
+            
             <p:outputLabel class="form">Peso:</p:outputLabel>
             <p:inputNumber value="#{avaliacao.avaliacao.peso}"/>
             <br/>
