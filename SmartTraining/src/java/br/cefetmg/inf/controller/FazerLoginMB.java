@@ -7,7 +7,6 @@ import br.cefetmg.inf.proxy.ManterInstrutorProxy;
 import java.sql.SQLException;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.faces.context.FacesContext;
 
 @ManagedBean(name = "login")
 @SessionScoped
@@ -15,7 +14,6 @@ public class FazerLoginMB {
 
     public String cpf;
     public String senha;
-    public String erro;
     Usuario aluno;
     Usuario instrutor;
 
@@ -29,21 +27,16 @@ public class FazerLoginMB {
             Usuario instrutor = manterInstrutor.pesquisarPorCpf(cpf);
 
             if (aluno != null && aluno.getTxtSenha().equals(senha)) {
-                jsp = "TelaInicialAluno.jsp";
+                jsp = "TelaInicialAluno";
             } else if (instrutor != null && instrutor.getTxtSenha().equals(senha)) {
-                jsp = "TelaInicialInstrutor.jsp";
-            } else if ((aluno != null && !aluno.getTxtSenha().equals(senha))
-                    || (instrutor != null && !instrutor.getTxtSenha().equals(senha))) {
-                erro = "Senha Incorreta";
-                jsp = "erro";
+                jsp = "TelaInicialInstrutor";
+            } else if ((aluno != null && !aluno.getTxtSenha().equals(senha)) || (instrutor != null && !instrutor.getTxtSenha().equals(senha))) {
+                throw new RuntimeException("CPF incorreto! **LoginUsuario");
             } else {
-                erro = "CPF incorreto";
                 throw new RuntimeException("CPF incorreto! **LoginUsuario");
             }
         } catch (SQLException e) {
-            e.printStackTrace(System.err);
-            erro = "Erro ao fazer login!";
-            jsp = "erro";
+            throw new RuntimeException("Erro ao fazer login! **LoginUsuario");
         }
         return jsp;
     }
@@ -62,14 +55,6 @@ public class FazerLoginMB {
 
     public void setSenha(String senha) {
         this.senha = senha;
-    }
-
-    public String getErro() {
-        return erro;
-    }
-
-    public void setErro(String erro) {
-        this.erro = erro;
     }
 
     public Usuario getAluno() {
