@@ -72,5 +72,4 @@ public class FazerLoginMB {
     public void setInstrutor(Usuario instrutor) {
         this.instrutor = instrutor;
     }
-
 }

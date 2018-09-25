@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Alterar Exercício</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:outputLabel class="form">Nome:</p:outputLabel>
+            <p:inputText value="#{exercicio.nome}"/>
+            <br/>
+            <p:outputLabel>Descrição:</p:outputLabel>
+            <p:inputTextarea value="#{exercicio.descricao}"/>
+            <br/>
+            <p:commandButton value="Alterar" action="#{exercicio.execute}"/>
+            <p:button value="Voltar" outcome="ListaExercicios.xhtml"/>
+        </h:form>
+    </h:body>
+</html>
+
