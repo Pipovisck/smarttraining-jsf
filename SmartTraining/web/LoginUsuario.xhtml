@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:outputLabel class="form">CPF: </p:outputLabel>
+            <p:inputText value="#{login.cpf}" maxlength="14" class="form-control"/>
+            <br/>
+
+            <p:outputLabel class="form">Senha:</p:outputLabel>
+            <p:password value="#{login.senha}" class="form-control"/>
+            <br/>
+
+            <p:commandButton action="#{login.execute}" class="btn btn-primary" value="Login"/>
+            <p:link outcome="CadastrarUsuario.jsp" class="btn btn-primary" value="Cadastrar"/>
+        </h:form>
+    </h:body>
+</html>
+

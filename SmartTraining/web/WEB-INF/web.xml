@@ -66,6 +66,6 @@
     <taglib-location>/WEB-INF/x-rt.tld</taglib-location>
   </taglib> -->
     <welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>LoginUsuario.xhtml</welcome-file>
     </welcome-file-list>
 </web-app>
