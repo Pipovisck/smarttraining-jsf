@@ -1,12 +1,68 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
     <h:head>
-        <title>Facelet Title</title>
+        <title>Alterar Avaliação</title>
     </h:head>
     <h:body>
-        Hello from Facelets
+        <h2></h2>
+        <h:form>
+            <p:outputLabel class="form">Peso:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.peso}"/>
+            <br/>
+            <p:outputLabel class="form">Percentual de Gordura:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.percentualGordura}"/>
+            <br/>
+            <p:outputLabel class="form">Massa gorda:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.massaGorda}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do pescoço:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoPescoco}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do ombro:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoOmbro}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do torax:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoTorax}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do abdomen:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoAbdomen}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do cintura:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoCintura}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do quadril:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoQuadril}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do braço esquerdo:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoBracoEsquerdo}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do braço direito:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoBracoDireito}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do antebraço esquerdo:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoAntebracoEsquerdo}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho do antebraço direito:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoAntebracoDireito}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho da coxa esquerda:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoCoxaEsquerda}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho da coxa direita:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoCoxaDireita}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho da panturrilha esquerda:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoPanturrilhaEsquerda}"/>
+            <br/>
+            <p:outputLabel class="form">Tamanho da panturrilha direita:</p:outputLabel>
+            <p:inputNumber value="#{avaliacao.tamanhoPanturrilhaDireita}"/>
+            
+            <p:commandButton value="Alterar" action="#{avaliacao.execute}"/>
+            <p:button outcome="ListaAvaliacoes.xhtml" value="Voltar"/>
+        </h:form>
     </h:body>
 </html>
 
