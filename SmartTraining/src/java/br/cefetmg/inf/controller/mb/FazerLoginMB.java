@@ -1,4 +1,4 @@
-package br.cefetmg.inf.controller;
+package br.cefetmg.inf.controller.mb;
 
 import br.cefetmg.inf.model.domain.Usuario;
 import br.cefetmg.inf.model.services.IManterUsuario;

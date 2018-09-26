@@ -13,12 +13,17 @@
     </managed-bean>
     <managed-bean>
         <managed-bean-name>fazerLoginMB</managed-bean-name>
-        <managed-bean-class>br.cefetmg.inf.controller.FazerLoginMB</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.FazerLoginMB</managed-bean-class>
+    
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
     <managed-bean>
         <managed-bean-name>avaliacaoMB</managed-bean-name>
-        <managed-bean-class>br.cefetmg.inf.controller.AvaliacaoMB</managed-bean-class>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.AvaliacaoMB</managed-bean-class>
+    
+        <managed-bean-scope>request</managed-bean-scope></managed-bean>
+    <managed-bean>
+        <managed-bean-name>aparelhoMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.AparelhoMB</managed-bean-class>
         <managed-bean-scope>request</managed-bean-scope>
     </managed-bean>
 </faces-config>
