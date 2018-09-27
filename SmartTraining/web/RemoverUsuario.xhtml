@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Remover usuário</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:outputLabel for="selecionado" value="Usuário a ser removido"/>
+            <p:selectOneMenu id="selecionado" value="#{usuario.selecionado}">
+                <f:selectItem itemLabel="Usuários" itemValue=""/>
+                <f:selectItems value="#{usuario.listaUsuarios}"/>
+            </p:selectOneMenu>
+            <br/>
+            <p:commandButton value="Remover" action="#{usuario.execute}"/>
+            <p:button outcome="ListaUsuarios.xhtml" value="Voltar"/>
+        </h:form>
+    </h:body>
+</html>
+
