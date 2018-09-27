@@ -5,13 +5,11 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
-        <title>Alterar Avaliação</title>
+        <title>Cadastrar Avaliação</title>
     </h:head>
     <h:body>
-        <h2>Alterar Avalição</h2>
         <h:form>
             <h:inputHidden value="#{avaliacao.avaliacao.codCpfAluno}"/>
-            <h:inputHidden value="#{avaliacao.avaliacao.data}"/>
             <h:inputHidden value="#{avaliacao.avaliacao.codCpfInstrutor}"/>
             
             <p:outputLabel class="form">Peso:</p:outputLabel>
@@ -65,12 +63,12 @@
             <p:outputLabel class="form">Tamanho da panturrilha direita:</p:outputLabel>
             <p:inputNumber value="#{avaliacao.avaliacao.tamanhoPanturrilhaDireita}"/>
             
-            <p:selectManyCheckbox value="#{avaliacao.objetivos}">
+            <p:selectManyCheckbox value="#{avaliacao.objetivosSelecionados}">
                 <f:selectItems value="#{avaliacao.listaObjetivos}" var="objetivo" itemLabel="#{objetivo}" itemValue="#{objetivo}"/>
             </p:selectManyCheckbox>
             
-            <p:commandButton value="Alterar" action="#{avaliacao.execute}"/>
-            <p:button outcome="ListaAvaliacoes.xhtml" value="Voltar"/>
+            <p:commandButton value="Cadastrar" action="#{avaliacao.execute}"/>
+            <p:button outcome="ListaAlunos.xhtml" value="Voltar"/>
         </h:form>
     </h:body>
 </html>
