@@ -26,49 +26,49 @@ public class AparelhoMB {
         return jsf;
     }
 
-//    public String pesquisar() {
-//        String jsf = "";
-//        try {
-//            IManterAparelho manterAparelho = new ManterAparelhoProxy();
-//            aparelho = manterAparelho.pesquisar(aparelho.getNroAparelho());
-//        } catch (SQLException e) {
-//            throw new RuntimeException("Erro ao pesquisar aparelho!");
-//        }
-//        return jsf;
-//    }
-//
-//    public String alterar() {
-//        String jsf = "";
-//        try {
-//            IManterAparelho manterAparelho = new ManterAparelhoProxy();
-//            manterAparelho.alterar(aparelho);
-//        } catch (SQLException e) {
-//            throw new RuntimeException("Erro ao alterar aparelho!");
-//        }
-//        return jsf;
-//    }
-//
-//    public String deletar() {
-//        String jsf = "";
-//        try {
-//            IManterAparelho manterAparelho = new ManterAparelhoProxy();
-//            manterAparelho.excluir(aparelho.getNroAparelho());
-//        } catch (SQLException e) {
-//            throw new RuntimeException("Erro ao excluir aparelho!");
-//        }
-//        return jsf;
-//    }
-//
-//    public String listar() {
-//        String jsf = "";
-//        try {
-//            IManterAparelho manterAparelho = new ManterAparelhoProxy();
-//            listaAparelhos = manterAparelho.pesquisarTodos();
-//        } catch (SQLException e) {
-//            throw new RuntimeException("Erro ao listar avaliacoes!");
-//        }
-//        return jsf;
-//    }
+    public String pesquisar() {
+        String jsf = "";
+        try {
+            IManterAparelho manterAparelho = new ManterAparelhoProxy();
+            aparelho = manterAparelho.pesquisar(aparelho.getNroAparelho());
+        } catch (SQLException e) {
+            throw new RuntimeException("Erro ao pesquisar aparelho!");
+        }
+        return jsf;
+    }
+
+    public String alterar() {
+        String jsf = "";
+        try {
+            IManterAparelho manterAparelho = new ManterAparelhoProxy();
+            manterAparelho.alterar(aparelho);
+        } catch (SQLException e) {
+            throw new RuntimeException("Erro ao alterar aparelho!");
+        }
+        return jsf;
+    }
+
+    public String deletar() {
+        String jsf = "";
+        try {
+            IManterAparelho manterAparelho = new ManterAparelhoProxy();
+            manterAparelho.excluir(aparelho.getNroAparelho());
+        } catch (SQLException e) {
+            throw new RuntimeException("Erro ao excluir aparelho!");
+        }
+        return jsf;
+    }
+
+    public String listar() {
+        String jsf = "";
+        try {
+            IManterAparelho manterAparelho = new ManterAparelhoProxy();
+            listaAparelhos = manterAparelho.pesquisarTodos();
+        } catch (SQLException e) {
+            throw new RuntimeException("Erro ao listar aparelhos!");
+        }
+        return jsf;
+    }
    
     public Aparelho getAparelho() {
         return aparelho;

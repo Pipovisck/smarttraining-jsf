@@ -26,4 +26,24 @@
         <managed-bean-class>br.cefetmg.inf.controller.mb.AparelhoMB</managed-bean-class>
         <managed-bean-scope>request</managed-bean-scope>
     </managed-bean>
+    <managed-bean>
+        <managed-bean-name>alunoMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.AlunoMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>atividadeMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.AtividadeMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>exercicioMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.ExercicioMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>instrutorMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.InstrutorMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
 </faces-config>
