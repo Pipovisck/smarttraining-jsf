@@ -64,10 +64,10 @@
             <p:inputNumber value="#{avaliacao.avaliacao.tamanhoPanturrilhaDireita}"/>
             
             <p:selectManyCheckbox value="#{avaliacao.objetivosSelecionados}">
-                <f:selectItems value="#{avaliacao.listaObjetivos}" var="objetivo" itemLabel="#{objetivo}" itemValue="#{objetivo}"/>
+                <f:selectItems value="#{avaliacao.avaliacao.listaObjetivos}" var="objetivo" itemLabel="#{objetivo}" itemValue="#{objetivo}"/>
             </p:selectManyCheckbox>
             
-            <p:commandButton value="Cadastrar" action="#{avaliacao.execute}"/>
+            <p:commandButton value="Cadastrar" action="#{avaliacao.cadastrar}"/>
             <p:button outcome="ListaAlunos.xhtml" value="Voltar"/>
         </h:form>
     </h:body>
