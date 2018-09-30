@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Avaliação</title>
+    </h:head>
+    <h:body>
+        <p:dataTable var="avaliacao" value="#{avaliacao.avaliacao}">
+            <p:column>
+                <p:outputLabel value="Peso:"/>
+                <h:outputText value="#{avaliacao.avaliacao.peso}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Percentual de gordura:"/>
+                <h:outputText value="#{avaliacao.avaliacao.percentualGordura}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Massa gorda:"/>
+                <h:outputText value="#{avaliacao.avaliacao.massaGorda}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do pescoço"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoPescoco}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do ombro:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoOmbro}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do tórax"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoTorax}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do abdômen"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoAbdomen}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho da cintura:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoCintura}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do quadril:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoQuadril}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do braço esquerdo:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoBracoEsquerdo}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do braço direito:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoBracoDireito}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do antebraço esquerdo:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoAntebracoEsquerdo}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho do antebraço direito"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoAntebracoDireito}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho da coxa esquerda:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoCoxaEsquerda}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho da coxa direita:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoCoxaDireita}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho panturrilha esquerda:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoPanturrilhaEsquerda}"/> 
+            </p:column>
+            
+            <p:column>
+                <p:outputLabel value="Tamanho panturrilha esquerda:"/>
+                <h:outputText value="#{avaliacao.avaliacao.tamanhoPanturrilhaDireita}"/> 
+            </p:column>
+            
+        </p:dataTable>
+        <h:form>
+            <p:dataList value="#{avaliacao.avaliacao.listaObjetivos}" var="objetivo" type="ordered">
+                <f:facet name="header">
+                    Objetivos
+                </f:facet>
+                #{objetivo.nomObjetivo}
+            </p:dataList>
+        </h:form>
+        
+        <p:button outcome="ListaAvaliacoes.xhtml" value="Voltar"/>
+    </h:body>
+</html>
+

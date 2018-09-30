@@ -11,7 +11,7 @@
         <h2>Alterar Avalição</h2>
         <h:form>
             <h:inputHidden value="#{avaliacao.avaliacao.codCpfAluno}"/>
-            <h:inputHidden value="#{avaliacao.avaliacao.data}"/>
+            <h:inputHidden value="#{avaliacao.avaliacao.datAvaliacao}"/>
             <h:inputHidden value="#{avaliacao.avaliacao.codCpfInstrutor}"/>
             
             <p:outputLabel class="form">Peso:</p:outputLabel>
@@ -65,11 +65,11 @@
             <p:outputLabel class="form">Tamanho da panturrilha direita:</p:outputLabel>
             <p:inputNumber value="#{avaliacao.avaliacao.tamanhoPanturrilhaDireita}"/>
             
-            <p:selectManyCheckbox value="#{avaliacao.objetivos}">
-                <f:selectItems value="#{avaliacao.listaObjetivos}" var="objetivo" itemLabel="#{objetivo}" itemValue="#{objetivo}"/>
+            <p:selectManyCheckbox value="#{avaliacao.objetivosSelecionados}">
+                <f:selectItems value="#{avaliacao.avaliacao.listaObjetivos}" var="objetivo" itemLabel="#{objetivo}" itemValue="#{objetivo}"/>
             </p:selectManyCheckbox>
             
-            <p:commandButton value="Alterar" action="#{avaliacao.execute}"/>
+            <p:commandButton value="Alterar" action="#{avaliacao.alterar}"/>
             <p:button outcome="ListaAvaliacoes.xhtml" value="Voltar"/>
         </h:form>
     </h:body>
