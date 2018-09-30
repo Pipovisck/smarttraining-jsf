@@ -42,7 +42,7 @@ public class RegiaoCorporalDao implements IRegiaoCorporalDao {
     }
 
     @Override
-    public void postRegiaoCorporal(RegiaoCorporal regiao, int codMusculo) throws SQLException {
+    public void postRegiaoCorporal(RegiaoCorporal regiao) throws SQLException {
         this.regiao = regiao;
         sql = "INSERT INTO \"RegiaoCorporal\" (nom_regiao) VALUES (?);";
 

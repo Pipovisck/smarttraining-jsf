@@ -9,10 +9,10 @@
     <h:body>
         <h:form>
             <p:outputLabel>Número:</p:outputLabel>
-            <p:inputNumber value="#{aparelho.aparelho.nroAparelho}"/>
+            <p:inputText value="#{aparelho.aparelho.nroAparelho}"/>
             <br/>
             <p:outputLabel>Nome:</p:outputLabel>
-            <p:inputNumber value="#{aparelho.aparelho.nomAparelho}"/>
+            <p:inputText value="#{aparelho.aparelho.nomAparelho}"/>
             <br/>
             <p:commandButton value="Cadastrar" action="#{aparelho.cadastrar}"/>
             <p:button value="Voltar" outcome="TelaInicialInstrutor.xhtml"/>

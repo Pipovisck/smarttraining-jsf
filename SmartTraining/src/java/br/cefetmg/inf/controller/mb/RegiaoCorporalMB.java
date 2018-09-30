@@ -18,7 +18,7 @@ public class RegiaoCorporalMB {
         String jsf = "TelaInicialInstrutor";
         try {
             IManterRegiaoCorporal manterRegiaoCorporal = new ManterRegiaoCorporalProxy();
-            manterRegiaoCorporal.cadastrar(regiaoCorporal, regiaoCorporal.getListaMusculos());
+            manterRegiaoCorporal.cadastrar(regiaoCorporal);
         } catch (SQLException e) {
             throw new RuntimeException("Erro ao cadastrar região corporal!");
         }

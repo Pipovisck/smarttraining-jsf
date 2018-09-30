@@ -789,8 +789,7 @@ public class AdapterService implements Runnable {
             }
             case CAD_REGCORP: {
                 try {
-                    manterRegiaoCorporal.cadastrar(gson.fromJson(pacote.getDados().get(0), RegiaoCorporal.class),
-                            gson.fromJson(pacote.getDados().get(1), int.class));
+                    manterRegiaoCorporal.cadastrar(gson.fromJson(pacote.getDados().get(0), RegiaoCorporal.class));
                 } catch (SQLException ex) {
                     Logger.getLogger(AdapterService.class.getName()).log(Level.SEVERE, null, ex);
                 }

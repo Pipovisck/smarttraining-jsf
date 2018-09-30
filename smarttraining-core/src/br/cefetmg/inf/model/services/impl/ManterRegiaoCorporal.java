@@ -23,9 +23,9 @@ public class ManterRegiaoCorporal implements IManterRegiaoCorporal {
     }
     
     @Override
-    public void cadastrar(RegiaoCorporal regiaoCorporal, int codMusculo) throws SQLException{
+    public void cadastrar(RegiaoCorporal regiaoCorporal) throws SQLException{
         regiaoCorporalDao = new RegiaoCorporalDao();
-        regiaoCorporalDao.postRegiaoCorporal(regiaoCorporal, codMusculo);
+        regiaoCorporalDao.postRegiaoCorporal(regiaoCorporal);
         regiaoCorporalDao.fechaConexao();
     }
 
