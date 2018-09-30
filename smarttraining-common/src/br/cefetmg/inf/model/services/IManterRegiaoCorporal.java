@@ -11,7 +11,7 @@ public interface IManterRegiaoCorporal {
 
     public RegiaoCorporal pesquisarRegiaoCorporal(int codRegiao) throws SQLException;
 
-    public void cadastrar(RegiaoCorporal regiaoCorporal, int codMusculo) throws SQLException;
+    public void cadastrar(RegiaoCorporal regiaoCorporal) throws SQLException;
 
     public void alterar(RegiaoCorporal regiaoCorporal) throws SQLException;
 

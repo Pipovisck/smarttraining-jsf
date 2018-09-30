@@ -18,7 +18,7 @@ public interface IRegiaoCorporalDao {
 
     public RegiaoCorporal getRegiaoCorporal(int codRegiao) throws SQLException;
 
-    public void postRegiaoCorporal(RegiaoCorporal regiao, int codMusculo) throws SQLException;
+    public void postRegiaoCorporal(RegiaoCorporal regiao) throws SQLException;
 
     public void putRegiaoCorporal(RegiaoCorporal regiao) throws SQLException;
 

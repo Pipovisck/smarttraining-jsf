@@ -19,5 +19,5 @@ public interface IManterObjetivo {
 
     public void alterar(Objetivo objetivo) throws SQLException;
 
-    public void excluir(int codRegiao) throws SQLException;
+    public void excluir(int codObjetivo) throws SQLException;
 }

@@ -17,19 +17,19 @@ public class FazerLoginMB {
     Usuario aluno;
     Usuario instrutor;
 
-    public String execute() {
-        String jsp;
+    public String login() {
+        String jsf;
         try {
 
             IManterUsuario manterAluno = new ManterAlunoProxy();
             IManterUsuario manterInstrutor = new ManterInstrutorProxy();
-            Usuario aluno = manterAluno.pesquisarPorCpf(cpf);
-            Usuario instrutor = manterInstrutor.pesquisarPorCpf(cpf);
+            aluno = manterAluno.pesquisarPorCpf(cpf);
+            instrutor = manterInstrutor.pesquisarPorCpf(cpf);
 
             if (aluno != null && aluno.getTxtSenha().equals(senha)) {
-                jsp = "TelaInicialAluno";
+                jsf = "TelaInicialAluno";
             } else if (instrutor != null && instrutor.getTxtSenha().equals(senha)) {
-                jsp = "TelaInicialInstrutor";
+                jsf = "TelaInicialInstrutor.xhtml";
             } else if ((aluno != null && !aluno.getTxtSenha().equals(senha)) || (instrutor != null && !instrutor.getTxtSenha().equals(senha))) {
                 throw new RuntimeException("CPF incorreto! **LoginUsuario");
             } else {
@@ -38,7 +38,7 @@ public class FazerLoginMB {
         } catch (SQLException e) {
             throw new RuntimeException("Erro ao fazer login! **LoginUsuario");
         }
-        return jsp;
+        return jsf;
     }
 
     public String getCpf() {

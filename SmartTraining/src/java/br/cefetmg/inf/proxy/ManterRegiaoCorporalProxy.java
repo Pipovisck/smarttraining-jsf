@@ -51,7 +51,7 @@ Cliente cliente;
     }
 
     @Override
-    public void cadastrar(RegiaoCorporal regiaoCorporal, int codMusculo) throws SQLException {
+    public void cadastrar(RegiaoCorporal regiaoCorporal) throws SQLException {
         Pacote pacoteEnviado;
         Pacote pacoteRecebido;
 
@@ -60,7 +60,6 @@ Cliente cliente;
         ArrayList<String> dados = new ArrayList<>();
         
         dados.add(gson.toJson(regiaoCorporal));
-        dados.add(gson.toJson(codMusculo));
         pacoteEnviado = new Pacote(TipoOperacao.CAD_REGCORP, dados);
 
         cliente.requisicao(pacoteEnviado);
