@@ -7,11 +7,10 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        <p:button value="Listar exercícios" outcome="ListarExercicios"/> <br/>
+        <p:commandButton value="Listar exercícios" action="#{exercicio.listar()}"/><br/>
         <p:button value="Cadastar exercício" outcome="CadastrarExercicio"/> <br/>
         <p:button value="Remover exercício" outcome="RemoverExercicio"/> <br/>
-        <p:button value="Listar alunos" outcome="ListarAlunos"/> <br/>
-        <p:button value="Listar instrutores" outcome="ListarInstrutores"/> <br/>
+        <p:commandButton value="Listar instrutores" action="#{instrutor.listar()}"/>
         <p:button value="Remover usuário" outcome="RemoverUsuario"/> <br/>
         <p:button value="Cadastrar aparelho" outcome="CadastrarAparelho"/>
     </h:body>
