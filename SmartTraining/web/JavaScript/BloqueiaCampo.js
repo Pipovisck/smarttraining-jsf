@@ -15,10 +15,8 @@ function formatar(mascara, documento){
 
 function isInstrutor(){
     if(instrutorEl.checked){
-        document.getElementById('cref').removeAttribute("disabled","");
-        document.getElementById('acao').value = "CadastrarInstrutor";
+        document.getElementById('cref').setAttribute("disabled","false");
     }else{
-        document.getElementById('cref').setAttribute("disabled","");
-        document.getElementById('acao').value = "CadastrarAluno";
+        document.getElementById('cref').setAttribute("disabled","true");
     }
 }

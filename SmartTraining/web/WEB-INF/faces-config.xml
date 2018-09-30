@@ -13,7 +13,62 @@
     </managed-bean>
     <managed-bean>
         <managed-bean-name>fazerLoginMB</managed-bean-name>
-        <managed-bean-class>br.cefetmg.inf.controller.FazerLoginMB</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.FazerLoginMB</managed-bean-class>
+    
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
+    <managed-bean>
+        <managed-bean-name>avaliacaoMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.AvaliacaoMB</managed-bean-class>
+    
+        <managed-bean-scope>request</managed-bean-scope></managed-bean>
+    <managed-bean>
+        <managed-bean-name>aparelhoMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.AparelhoMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>alunoMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.AlunoMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>atividadeMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.AtividadeMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>exercicioMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.ExercicioMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>instrutorMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.InstrutorMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>fichaMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.FichaMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>musculoMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.MusculoMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>objetivoMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.ObjetivoMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>regiaoCorporalMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.RegiaoCorporalMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>treinoMB</managed-bean-name>
+        <managed-bean-class>br.cefetmg.inf.controller.mb.TreinoMB</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
     </managed-bean>
 </faces-config>

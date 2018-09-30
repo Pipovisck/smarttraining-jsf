@@ -2,8 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/C:/Users/Gabriel/Desktop/smarttraining-jsf/smarttraining-common/src/br/cefetmg/inf/model/domain/Avaliacao.java</file>
         </group>
+=======
+        <group/>
+>>>>>>> e3d44a37b1aadb2fd9742f0c8ffd2aa614b5522f
     </open-files>
 </project-private>
