@@ -7,18 +7,11 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-<<<<<<< HEAD
         <p:commandButton value="Listar exercícios" action="#{exercicio.listar()}"/><br/>
         <p:button value="Cadastar exercício" outcome="CadastrarExercicio"/> <br/>
         <p:button value="Remover exercício" outcome="RemoverExercicio"/> <br/>
         <p:commandButton value="Listar instrutores" action="#{instrutor.listar()}"/>
-=======
-        <!--<p:button value="Listar exercícios" outcome="ListarExercicios"/> <br/>-->
-        <p:button value="Cadastar exercício" outcome="CadastrarExercicio"/> <br/>
-        <p:button value="Remover exercício" outcome="RemoverExercicio"/> <br/>
-<!--        <p:button value="Listar alunos" outcome="ListarAlunos"/> <br/>
-        <p:button value="Listar instrutores" outcome="ListarInstrutores"/> <br/>-->
->>>>>>> e0df575ee90f2fed9134cfd2f7a5080f6d47e618
+        <p:commandButton value="Listar alunos" action="${aluno.listar()}"/> <br/>
         <p:button value="Remover usuário" outcome="RemoverUsuario"/> <br/>
         <p:button value="Cadastrar aparelho" outcome="CadastrarAparelho"/>
     </h:body>

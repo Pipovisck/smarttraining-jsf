@@ -7,11 +7,11 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        <p:button value="Perfil" outcome="MostrarUsuario"/> <br/>
+        <p:commandButton value="Perfil" action="${aluno.mostrar()}"/> <br/>
         <p:button value="Alterar perfil" outcome="AlterarUsuario"/> <br/>
-        <p:button value="Ver avaliações" outcome="ListaAvaliacoes"/> <br/>
-        <p:button value="Ver Fichas" outcome="ListaFichas"/> <br/>
-        <p:button value="Ver Exercícios" outcome="ListaExercicios"/> <br/>
+        <p:commandButton value="Ver avaliações" action="${aluno.listar()}"/> <br/>
+        <p:commandButton value="Ver Fichas" action="${aluno.listarFichas()}"/> <br/>
+        <p:commandButton value="Ver Exercícios" action="${exercicio.listar()}"/> <br/>
     </h:body>
 </html>
 

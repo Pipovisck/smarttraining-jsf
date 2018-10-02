@@ -15,7 +15,7 @@
                 <f:selectItems value="#{exercicio.listaExercicios}"/> 
             </p:selectOneMenu>
             <br/>
-            <p:commandButton value="Remover" action="#{exercicio.execute}"/>
+            <p:commandButton value="Remover" action="#{exercicio.deletar()}"/>
             <p:button value="Voltar" outcome="ListaExercicios.xhtml"/>
         </h:form>
     </h:body>

@@ -23,7 +23,7 @@
                 <f:selectItems value="#{exercicio.codMusculos}" var="musculo" itemLabel="#{musculo}" itemValue="#{musculo}"/>
             </p:selectManyCheckbox>
             <br/>
-            <p:commandButton value="Alterar" action="#{exercicio.excute}"/>
+            <p:commandButton value="Alterar" action="#{exercicio.cadastrar()}"/>
             <p:button value="Voltar" outcome="ListaExercicios.xhtml"/>
         </h:form>
     </h:body>

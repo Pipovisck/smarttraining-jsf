@@ -67,7 +67,7 @@
                 <f:selectItems value="#{avaliacao.avaliacao.listaObjetivos}" var="objetivo" itemLabel="#{objetivo}" itemValue="#{objetivo}"/>
             </p:selectManyCheckbox>
             
-            <p:commandButton value="Cadastrar" action="#{avaliacao.execute}"/>
+            <p:commandButton value="Cadastrar" action="#{avaliacao.cadastrar()}"/>
             <p:button outcome="ListaAlunos.xhtml" value="Voltar"/>
         </h:form>
     </h:body>

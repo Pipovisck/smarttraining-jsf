@@ -16,7 +16,9 @@ function formatar(mascara, documento){
 function isInstrutor(){
     if(instrutorEl.checked){
         document.getElementById('cref').setAttribute("disabled","false");
+        document.querySelector('.botaoCadastro').setAttribute('action', '#{instrutor.cadastrar()}');
     }else{
         document.getElementById('cref').setAttribute("disabled","true");
+        document.querySelector('.botaoCadastro').setAttribute('action', '#{aluno.cadastrar()}');
     }
 }

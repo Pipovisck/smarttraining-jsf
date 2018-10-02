@@ -25,7 +25,7 @@
             <p:outputLabel>Data de nascimento:</p:outputLabel>
             <p:calendar id="popup" value="#{usuario.datNascimento}"/>
             
-            <p:commandButton value="Alterar" action="#{usuario.execute}"/>
+            <p:commandButton value="Alterar" action="#{aluno.alterar()}"/>
             <p:button value="Voltar" outcome="ListaUsuarios.xhtml"/>
         </h:form>
     </h:body>

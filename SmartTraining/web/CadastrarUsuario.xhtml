@@ -43,7 +43,7 @@
             <p:inputNumber value="#{instrutor.cref}" id="cref" disabled="true"/>
             <br/>
             
-            <p:commandButton action="#{usuario.execute}" value="Cadastrar"/>
+            <p:commandButton class="botaoCadastro" action="#{aluno.cadastrar()}" value="Cadastrar"/>
             <p:button outcome="LoginUsuario" value="Voltar"/>
         </h:form>
         
